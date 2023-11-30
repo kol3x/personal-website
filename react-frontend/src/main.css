@@ -1,0 +1,96 @@
+main {
+  background-color: rgba(128, 128, 128, 0.11);
+  align-self: center;
+  font-size: 1.7em;
+  padding-bottom: 50px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.projects-list {
+  transition: 2s;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.project {
+  display: grid;
+  grid-template-rows: 1fr 30px 50px 120px;
+  height: 650px;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  box-shadow: rgb(248, 151, 255) 0px 2px 4px, rgb(248, 151, 255) 0px 7px 13px;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.project > img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.project > p {
+  text-align: left;
+  padding: 10px;
+  font-size: 18px;
+}
+
+main > h1 {
+  text-align: center;
+  letter-spacing: -4px;
+  word-spacing: 10px;
+  padding-top: 50px;
+  margin-bottom: 70px;
+}
+
+
+.project:hover {
+  background-color: rgb(248, 151, 255);
+  
+}
+
+.project:hover button {
+  color: black;
+  height: 20%;
+}
+
+.sources {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 15px;
+}
+.sources > a > button {
+  background-color: white;
+  border-radius: 5px;
+  transition: 2s;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.sources > a  {
+  display: grid;
+  place-content: center;
+  align-self: end;
+  background-color: white;
+  width: 100%;
+  border-radius: 5px;
+  height: 35%;
+  transition: 2s;
+  border: none;
+  cursor: pointer;
+}
+
+button > a {
+  color: inherit;
+}
+
+button > a:hover {
+  color: inherit;
+}
