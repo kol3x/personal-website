@@ -18,9 +18,8 @@ main {
 }
 
 .project {
-  display: grid;
-  grid-template-rows: 1fr 30px 50px 120px;
-  height: 650px;
+  display: flex;
+  flex-direction: column;
   color: black;
   background-color: white;
   padding: 10px;
@@ -33,6 +32,13 @@ main {
 .project > img {
   width: 100%;
   border-radius: 5px;
+  object-fit: contain;
+}
+
+.project > h4 {
+  padding-top: 8px;
+  align-self: center;
+  margin: 0px;
 }
 
 .project > p {
@@ -49,19 +55,16 @@ main > h1 {
   margin-bottom: 70px;
 }
 
-
 .project:hover {
   background-color: rgb(248, 151, 255);
-  
 }
 
 .project:hover button {
   color: black;
-  height: 20%;
 }
 
 .sources {
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   gap: 15px;
@@ -69,19 +72,18 @@ main > h1 {
 .sources > a > button {
   background-color: white;
   border-radius: 5px;
-  transition: 2s;
   border: none;
   cursor: pointer;
   font-size: 20px;
+  height: 40px;
 }
-.sources > a  {
+.sources > a {
   display: grid;
-  place-content: center;
   align-self: end;
   background-color: white;
   width: 100%;
   border-radius: 5px;
-  height: 35%;
+
   transition: 2s;
   border: none;
   cursor: pointer;

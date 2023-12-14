@@ -29,7 +29,7 @@ function Links() {
         <div>
           <div>
             <img alt="E-mail" className="icon" src={email}></img>
-            <h2>kolaegipet@gmail.com</h2>
+            <h2>kolaegipet</h2>@gmail.com
           </div>
         </div>
       </div>

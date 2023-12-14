@@ -1,11 +1,10 @@
 footer {
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin: 70px 30px;
 }
 
 .links {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  gap: 10px;
 }
 
 .links > a,
@@ -31,4 +30,8 @@ footer {
 .icon {
   width: 100px;
   transition: 0.3s;
+}
+
+.links > div > div > h2 {
+  margin: 5px;
 }
