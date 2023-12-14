@@ -22,7 +22,7 @@ function Portfolio() {
               <button>Check out</button>
             </a>
             <a href="https://github.com/kol3x/blog-API" target="_blank">
-              <button>Source code</button>
+              <button>Code</button>
             </a>
           </div>
         </div>
@@ -41,7 +41,7 @@ function Portfolio() {
               <button>Check out</button>
             </a>
             <a href="https://github.com/kol3x/League-Helper" target="_blank">
-              <button>Source code</button>
+              <button>Code</button>
             </a>
           </div>
         </div>
@@ -57,7 +57,7 @@ function Portfolio() {
               <button>Check out</button>
             </a>
             <a href="https://github.com/kol3x/battleship" target="_blank">
-              <button>Source code</button>
+              <button>Code</button>
             </a>
           </div>
         </div>
@@ -74,7 +74,7 @@ function Portfolio() {
               <button>Check out</button>
             </a>
             <a href="https://github.com/kol3x/Find-the-Turtle" target="_blank">
-              <button>Source code</button>{" "}
+              <button>Code</button>{" "}
             </a>
           </div>
         </div>
