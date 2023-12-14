@@ -37,7 +37,7 @@ function Portfolio() {
             the data for each player on the first look-up for 24 hours.
           </p>
           <div className="sources">
-            <a href="#" target="_blank">
+            <a href="https://moonlit-kleicha-cc0648.netlify.app/" target="_blank">
               <button>Check out</button>
             </a>
             <a href="https://github.com/kol3x/League-Helper" target="_blank">
