@@ -13,12 +13,12 @@ function Portfolio() {
           <h4>Blog App</h4>
           <p>
             One of my most advanced projects. It consists of a React front-end
-            for blog viewers, REST API build on Express.js in the backend,
-            MongoDB and additional React front-end for adding new blog-posts,
+            to view blogposts and leave comments, REST API build on Express.js in the backend,
+            MongoDB and additional React admin front-end for adding new blog-posts,
             build with express-session.
           </p>
           <div className="sources">
-            <a href="#" target="_blank">
+            <a href="https://spectacular-raindrop-01ff35.netlify.app" target="_blank">
               <button>Check out</button>
             </a>
             <a href="https://github.com/kol3x/blog-API" target="_blank">
