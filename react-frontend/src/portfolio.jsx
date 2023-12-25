@@ -70,7 +70,7 @@ function Portfolio() {
             state, React front-end.{" "}
           </p>
           <div className="sources">
-            <a href="#" target="_blank">
+            <a href="https://visionary-beignet-52e97c.netlify.app/" target="_blank">
               <button>Check out</button>
             </a>
             <a href="https://github.com/kol3x/Find-the-Turtle" target="_blank">
