@@ -20,7 +20,7 @@ function Links() {
             <h2>LinkedIn</h2>
           </div>
         </a>
-        <a>
+        <a href="https://drive.google.com/file/d/1EhNXC7W4MSyUZPRsjOhNmxKJgxWi7yj2/view?usp=sharing" target="_blank">
           <div>
             <img alt="CV" className="icon" src={cv}></img>
             <h2>CV</h2>
