@@ -39,7 +39,7 @@ function Header() {
     <header ref={header}>
       <div className="main-pic">
         <img src={mainPic} />
-        <h3>Nikolai Sherby</h3>
+        <h3>Nikolai Shcherbinin</h3>
       </div>
       <div className="about-me">
         <h2>About me</h2>
