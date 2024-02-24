@@ -1,16 +1,12 @@
-#root {
-  margin: 0 auto;
-  text-align: center;
-}
-
-.tiles {
-  z-index: auto;
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+@keyframes space {
+  0% {
+    transform: rotate(0deg);
+    scale: 1.5;
+  }
+  100% {
+    transform: rotate(360deg);
+    scale: 2;
+  }
 }
 
 @keyframes flashingLights {
@@ -41,6 +37,26 @@
     transform: scale(0.3);
     background-color: white;
   }
+}
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tiles {
+  z-index: auto;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  animation-name: space;
+  animation-duration: 120s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
 }
 
 .tile-wrapper {

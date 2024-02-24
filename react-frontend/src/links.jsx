@@ -20,7 +20,10 @@ function Links() {
             <h2>LinkedIn</h2>
           </div>
         </a>
-        <a href="https://drive.google.com/file/d/1tFo8gHuCzHA18mZxYaaY19Fo3JBXeEXY" target="_blank">
+        <a
+          href="https://drive.google.com/file/d/1tFo8gHuCzHA18mZxYaaY19Fo3JBXeEXY"
+          target="_blank"
+        >
           <div>
             <img alt="CV" className="icon" src={cv}></img>
             <h2>CV</h2>
