@@ -71,7 +71,7 @@ header > .main-pic > img {
     grid-template-columns: 1fr;
   }
 
-  .about-me > p {
+  .about-me > div {
     font-size: 24px;
   }
   header > .main-pic > h3 {
@@ -105,7 +105,7 @@ header > .main-pic > img {
     font-size: 22px;
   }
 
-  .about-me > p {
+  .about-me > div {
     font-size: 20px;
   }
 

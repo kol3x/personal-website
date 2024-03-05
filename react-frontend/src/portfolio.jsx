@@ -3,11 +3,18 @@ import project2 from "./imgs/project-2.png";
 import project3 from "./imgs/project-3.png";
 import project4 from "./imgs/project-4.png";
 import { Reveal } from "./components/reveal";
+import { motion } from "framer-motion";
 
 function Portfolio() {
+  const fadeInVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 3 } },
+  };
   return (
     <main>
-      <h1>My work</h1>
+      <motion.h1 initial="hidden" animate="visible" variants={fadeInVariants}>
+        My Work
+      </motion.h1>
       <div className="projects-list">
         <Reveal className="project">
           <div className="project">
@@ -15,14 +22,14 @@ function Portfolio() {
             <h4>
               <Reveal>Blog App</Reveal>
             </h4>
-            <p>
+            <div>
               <Reveal>
                 One of my most advanced projects. It consists of a React
                 front-end to view blogposts and leave comments, REST API build
                 on Express.js in the backend, MongoDB and additional React admin
                 front-end for adding new blog-posts, build with express-session.
               </Reveal>
-            </p>
+            </div>
             <div className="sources">
               <a
                 href="https://spectacular-raindrop-01ff35.netlify.app"
@@ -42,7 +49,7 @@ function Portfolio() {
             <h4>
               <Reveal>League Helper</Reveal>
             </h4>
-            <p>
+            <div>
               <Reveal>
                 My passion project, build with React and Redis, it uses Riot
                 Games' API to fetch user's last League of Legends matches and
@@ -51,7 +58,7 @@ function Portfolio() {
                 Redis for caching the data for each player on the first look-up
                 for 24 hours.
               </Reveal>
-            </p>
+            </div>
             <div className="sources">
               <a
                 href="https://moonlit-kleicha-cc0648.netlify.app/"
@@ -71,12 +78,12 @@ function Portfolio() {
             <h4>
               <Reveal>Battleship Game</Reveal>
             </h4>
-            <p>
+            <div>
               <Reveal>
                 The classic Battleship game, implemented with vanilla JavaScript
                 and written using test-driven development technics with Jest.
               </Reveal>
-            </p>
+            </div>
             <div className="sources">
               <a
                 href="https://kol3x.github.io/battleship/dist/"
@@ -96,13 +103,13 @@ function Portfolio() {
             <h4>
               <Reveal>Find the turtle!</Reveal>
             </h4>
-            <p>
+            <div>
               <Reveal>
                 My implementation of "Where's Waldo?" game, but with TMNT
                 characters. Express.js backend to store best time results and
                 game state, React front-end.
               </Reveal>
-            </p>
+            </div>
             <div className="sources">
               <a
                 href="https://visionary-beignet-52e97c.netlify.app/"
