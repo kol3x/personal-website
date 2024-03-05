@@ -2,11 +2,17 @@ import mainPic from "./imgs/main-pic.jpeg";
 import HeroEffect from "./hero";
 import { useRef, useState, useLayoutEffect, useEffect } from "react";
 import { Reveal } from "./components/reveal";
+import { motion } from "framer-motion";
 
 function Header() {
   const header = useRef();
   const [columns, setColumns] = useState(0);
   const [rows, setRows] = useState(0);
+
+  const fadeInVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 1.5 } },
+  };
 
   useLayoutEffect(() => {
     function handleResize() {
@@ -38,10 +44,15 @@ function Header() {
   };
   return (
     <header ref={header}>
-      <div className="main-pic">
-        <img src={mainPic} />
-        <h3>Nikolai Shcherbinin</h3>
-      </div>
+      <motion.div
+        className="main-pic"
+        initial="hidden"
+        animate="visible"
+        variants={fadeInVariants}
+      >
+        <motion.img src={mainPic} alt="Main Pic" />
+        <motion.h3>Nikolai Shcherbinin</motion.h3>
+      </motion.div>
       <div className="about-me">
         <h2>About me</h2>
 
