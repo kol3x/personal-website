@@ -6,15 +6,9 @@ import { Reveal } from "./components/reveal";
 import { motion } from "framer-motion";
 
 function Portfolio() {
-  const fadeInVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 3 } },
-  };
   return (
     <main>
-      <motion.h1 initial="hidden" animate="visible" variants={fadeInVariants}>
-        My Work
-      </motion.h1>
+      <h1>My Work</h1>
       <div className="projects-list">
         <Reveal className="project">
           <div className="project">
