@@ -49,8 +49,7 @@ function Portfolio() {
                 Games' API to fetch user's last League of Legends matches and
                 show some fun statistics, that are not usually shown on popular
                 LoL-stats websites. To not rely on the API too much, I used
-                Redis for caching the data for each player on the first look-up
-                for 24 hours.
+                Redis to cache data on the first look-up.
               </Reveal>
             </div>
             <div className="sources">

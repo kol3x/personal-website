@@ -23,7 +23,6 @@ main {
   color: black;
   background-color: white;
   padding: 10px;
-  box-shadow: rgb(248, 151, 255) 0px 2px 4px, rgb(248, 151, 255) 0px 7px 13px;
   font-size: 18px;
   border-radius: 5px;
   transition: 1s;
@@ -60,17 +59,13 @@ main > h1 {
   background-color: rgb(248, 151, 255);
 }
 
-.project:hover button {
-  color: black;
-}
-
 .sources {
   display: flex;
   gap: 15px;
   
 }
 .sources > a > button {
-  background-color: white;
+  background-color: rgb(97, 97, 97);
   border-radius: 5px;
   border: none;
   cursor: pointer;

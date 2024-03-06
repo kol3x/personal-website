@@ -14,7 +14,10 @@ function Links() {
             <h2>Github</h2>
           </div>
         </a>
-        <a href="https://www.linkedin.com/in/nikolas-sherby/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/nikolai-shcherbinin/"
+          target="_blank"
+        >
           <div>
             <img alt="LinkedIn" className="icon" src={linkedin}></img>
             <h2>LinkedIn</h2>

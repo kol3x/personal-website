@@ -6,7 +6,6 @@ import Portfolio from "./portfolio";
 import Links from "./links";
 import { motion } from "framer-motion";
 
-
 function App() {
   const fadeInVariants = {
     hidden: { opacity: 0 },

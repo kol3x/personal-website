@@ -44,41 +44,31 @@ function Header() {
   };
   return (
     <header ref={header}>
-      <motion.div
-        className="main-pic"
-        initial="hidden"
-        animate="visible"
-        variants={fadeInVariants}
-      >
-        <motion.img src={mainPic} alt="Main Pic" />
-        <motion.h3>Nikolai Shcherbinin</motion.h3>
-      </motion.div>
+      <div className="main-pic">
+        <img src={mainPic} alt="Main Pic" />
+        <h3>Nikolai Shcherbinin</h3>
+      </div>
       <div className="about-me">
-        <motion.h2 initial="hidden" animate="visible" variants={fadeInVariants}>About me</motion.h2>
-
+        <h2 initial="hidden" animate="visible" variants={fadeInVariants}>
+          About me
+        </h2>
         <div>
-          <Reveal>
-            A software engineer with a great passion for everything
-            tech-related.
-          </Reveal>
-        </div><br></br>
+          A software engineer with a great passion for everything tech-related.
+        </div>
+        <br></br>
         <div>
-          <Reveal>
-            I found my way into coding by learning basic C, then switching to
-            Python and built a dozen of projects using Django and Flask.
-          </Reveal>
-        </div><br></br>
+          I found my way into coding by learning basic C, then switching to
+          Python and built a dozen of projects using Django and Flask.
+        </div>
+        <br></br>
         <div>
-          <Reveal>
-            The next thing I did was going really deep inside HTML, CSS and
-            plain JavaScript, which i've already had a grasp of previously.
-          </Reveal>
-        </div><br></br>
+          The next thing I did was going really deep inside HTML, CSS and plain
+          JavaScript, which i've already had a grasp of previously.
+        </div>
+        <br></br>
         <div>
-          <Reveal>
-            After mastering JavaScript, I finally got into learning React,
-            NodeJS, Express and finished my portfolio projects on top of those.
-          </Reveal>
+          After mastering JavaScript, I finally got into learning React, NodeJS,
+          Express and finished my portfolio projects on top of those.
         </div>
       </div>
       <div style={styles}>
