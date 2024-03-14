@@ -55,17 +55,17 @@ function Header() {
         <div>
           A software engineer with a great passion for everything tech-related.
         </div>
-        <br></br>
+        <br />
         <div>
           I found my way into coding by learning basic C, then switching to
           Python and built a dozen of projects using Django and Flask.
         </div>
-        <br></br>
+        <br />
         <div>
           The next thing I did was going really deep inside HTML, CSS and plain
           JavaScript, which i've already had a grasp of previously.
         </div>
-        <br></br>
+        <br />
         <div>
           After mastering JavaScript, I finally got into learning React, NodeJS,
           Express and finished my portfolio projects on top of those.
