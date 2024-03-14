@@ -70,6 +70,13 @@ function Header() {
           After mastering JavaScript, I finally got into learning React, NodeJS,
           Express and finished my portfolio projects on top of those.
         </div>
+        <br />
+        <div>
+          Right now I am focused on learning Next.js, React Native, system
+          design and more.
+        </div>
+        <br />
+        <br />
       </div>
       <div style={styles}>
         <HeroEffect quantity={quantity} />

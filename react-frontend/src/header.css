@@ -3,7 +3,7 @@ header {
   align-self: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 100vh;
+  height: max-content;
 }
 
 header > .main-pic {
@@ -37,10 +37,11 @@ header > .main-pic {
 
 header > .about-me {
   background-color: rgba(128, 128, 128, 0.11);
+  margin-top: 29px;
   margin-right: 20px;
   align-self: center;
   justify-self: start;
-  font-size: 1.6em;
+  font-size: 1.4em;
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -79,7 +80,7 @@ header > .main-pic > img {
   }
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 870px) {
   header {
     grid-template-columns: 1fr;
   }
