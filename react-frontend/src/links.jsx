@@ -24,7 +24,7 @@ function Links() {
           </div>
         </a>
         <a
-          href="https://drive.google.com/file/d/1NyO2-LAhvZKerFN_pPtdhybbGYvlN-Pe"
+          href="https://drive.google.com/file/d/1bvBSbMOva52pBVtP4OKvGnLNA2al8-9C/"
           target="_blank"
         >
           <div>
