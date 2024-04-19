@@ -1,9 +1,7 @@
-import "./App.css";
 import "./header.css";
 import "./main.css";
 import Header from "./header";
 import Portfolio from "./portfolio";
-import Links from "./links";
 import { motion } from "framer-motion";
 
 function App() {
@@ -15,7 +13,6 @@ function App() {
     <motion.div initial="hidden" animate="visible" variants={fadeInVariants}>
       <Header />
       <Portfolio />
-      <Links />
     </motion.div>
   );
 }

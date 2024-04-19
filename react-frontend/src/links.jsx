@@ -1,4 +1,3 @@
-import "./links.css";
 import github from "./icons/github.png";
 import linkedin from "./icons/linkedin.png";
 import cv from "./icons/cv.png";
