@@ -1,5 +1,6 @@
 import HeroBackground from "./imgs/heroBackground.jpg";
 import NikoPhotoAnimated from "./imgs/NikoPhotoAnimated.gif";
+import MenuBar from "./components/menuBar";
 
 const style = {
   backgroundImage: `url(${HeroBackground})`,
@@ -7,7 +8,8 @@ const style = {
 
 function Header() {
   return (
-    <header style={style}>
+    <div className="heroScreen" style={style}>
+      <MenuBar></MenuBar>
       <h1 className="name">
         NIKOLAI <br></br> <span>SHCHERBININ</span>
         <h4 className="jobTitle">SOFTWARE DEVELOPER</h4>
@@ -18,7 +20,7 @@ function Header() {
         alt="Nikolai Animated"
       />
       
-    </header>
+    </div>
   );
 }
 

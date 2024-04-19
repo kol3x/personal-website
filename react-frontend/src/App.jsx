@@ -4,6 +4,7 @@ import Header from "./header";
 import Portfolio from "./portfolio";
 import { motion } from "framer-motion";
 import Helmet from "react-helmet";
+import MenuBar from "./components/menuBar";
 
 function App() {
   const fadeInVariants = {

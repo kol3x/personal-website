@@ -1,11 +1,10 @@
-header {
+.heroScreen {
   display: grid;
   height: 100vh;
   color: #00bf63;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  margin-left: 120px;
-  margin-right: 120px;
+  gap: 100px;
 }
 
 .name {
@@ -17,6 +16,7 @@ header {
   letter-spacing: 7px;
   font-size: 120px;
   align-self: center;
+  justify-self: end;
 }
 
 .name > span {
@@ -28,10 +28,11 @@ header {
   grid-row: 1 / 3;
   grid-column: 2;
   place-self: center;
+  justify-self: start;
 }
 
 .jobTitle {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 30px;
   align-self: center;
 }
