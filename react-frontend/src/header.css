@@ -36,3 +36,34 @@
   font-size: 30px;
   align-self: center;
 }
+
+@media (max-width: 1260px) {
+  .heroScreen {
+    grid-template-columns: 1fr;
+  }
+  .nikoAnimatedPhoto {
+    grid-column: 1;
+    height: 500px;
+    align-self: end;
+    justify-self: center;
+  }
+  .name {
+    grid-row: 1;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .name {
+    font-size: 60px;
+  }
+  .jobTitle {
+    font-size: 25px;
+  }
+  .nikoAnimatedPhoto {
+    grid-column: 1;
+    height: 450px;
+    align-self: end;
+    justify-self: center;
+  }
+}

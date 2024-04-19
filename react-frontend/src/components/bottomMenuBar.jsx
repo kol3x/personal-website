@@ -11,16 +11,14 @@ import CVIcon from "@mui/icons-material/Description";
 import EmailIcon from "@mui/icons-material/Email";
 import LeetcodeIcon from "@mui/icons-material/Code";
 
-export default function MenuBar() {
+export default function BottomMenuBar() {
   return (
     <Box sx={{ gridRow: 1, gridColumn: "1 / -1" }}>
       <AppBar
-        sx={{ backgroundColor: "black", borderBottom: "1px solid #00bf63" }}
+        sx={{ backgroundColor: "#00bf63", color: "black"}}
         position="static"
       >
         <Toolbar>
-          <Button color="inherit">Home</Button>
-          <Button color="inherit">Blog</Button>
           <Button disabled sx={{ flexGrow: 1 }}></Button>
           <Tooltip title="My GitHub profile">
             <IconButton
@@ -77,6 +75,7 @@ export default function MenuBar() {
               <LeetcodeIcon />
             </IconButton>
           </Tooltip>
+          <Button disabled sx={{ flexGrow: 1 }}></Button>
         </Toolbar>
       </AppBar>
     </Box>

@@ -2,7 +2,6 @@ import BlogAppImg from "./imgs/project-1.png";
 import LeagueHelperImg from "./imgs/project-2.png";
 import BattleshipImg from "./imgs/project-3.png";
 import TurtleImg from "./imgs/project-4.png";
-import { Reveal } from "./components/reveal";
 import ProjectCard from "./components/projectCard";
 
 const projects = [
