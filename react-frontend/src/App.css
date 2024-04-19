@@ -50,8 +50,8 @@
 
 .tile {
   background-color: #4d0f51;
-  height: 25px;
-  width: 25px;
+  height: 45px;
+  width: 45px;
   border-radius: 50%;
   animation-name: flashingLights;
   animation-duration: 5s;

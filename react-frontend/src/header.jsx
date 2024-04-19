@@ -1,8 +1,6 @@
 import mainPic from "./imgs/main-pic.jpeg";
 import HeroEffect from "./hero";
 import { useRef, useState, useLayoutEffect, useEffect } from "react";
-import { Reveal } from "./components/reveal";
-import { motion } from "framer-motion";
 
 function Header() {
   const header = useRef();
@@ -16,8 +14,8 @@ function Header() {
 
   useLayoutEffect(() => {
     function handleResize() {
-      const newCol = Math.floor(window.innerWidth / 50);
-      const newRows = Math.floor(header.current?.clientHeight / 50);
+      const newCol = Math.floor(window.innerWidth / 200);
+      const newRows = Math.floor(header.current?.clientHeight / 200);
       setColumns(newCol);
       setRows(newRows);
     }
