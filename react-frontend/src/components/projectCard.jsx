@@ -1,48 +1,49 @@
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
+import * as React from "react";
+import AspectRatio from "@mui/joy/AspectRatio";
+import Button from "@mui/joy/Button";
+import Card from "@mui/joy/Card";
+import CardContent from "@mui/joy/CardContent";
+import Typography from "@mui/joy/Typography";
 
 export default function ProjectCard({ project }) {
   return (
     <Card sx={{ maxWidth: "100%" }}>
-      <CardMedia
-        sx={{ height: 400 }}
-        image={project.img}
-        title={project.title}
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+      <div>
+        <Typography fontSize="lg" fontWeight="lg">
           {project.title}
         </Typography>
-        <Typography variant="body1" color="text.secondary">
-          {project.desc}
-        </Typography>
+        <Typography level="body-sm">React, Express, MongoDB</Typography>
+      </div>
+      <AspectRatio minHeight="120px" maxHeight="400px">
+        <img src={project.img} loading="lazy" alt="" />
+      </AspectRatio>
+      <CardContent orientation="horizontal">
+        <div>
+          <Typography fontSize="sm">{project.desc}</Typography>
+        </div>
       </CardContent>
-      <CardActions sx={{ alignSelf: "end" }}>
+      <CardContent orientation="horizontal">
         <Button
-          variant="contained"
-          size="large"
-          color="secondary"
+          variant="solid"
+          size="lg  "
+          color="primary"
+          aria-label={project.name}
+          sx={{ ml: "auto", fontWeight: 600 }}
           fullWidth
-          href={project.appURL}
-          target="_blank"
         >
-          Check out
+          CHECK OUT
         </Button>
         <Button
-          variant="contained"
-          size="large"
+          variant="solid"
+          size="lg"
           color="success"
+          aria-label="Explore Bahamas Islands"
+          sx={{ ml: "auto", fontWeight: 600 }}
           fullWidth
-          href={project.codeURL}
-          target="_blank"
         >
-          Code
+          CODE
         </Button>
-      </CardActions>
+      </CardContent>
     </Card>
   );
 }
