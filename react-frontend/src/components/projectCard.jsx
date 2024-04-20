@@ -32,7 +32,7 @@ export default function ProjectCard({ project }) {
             size="md"
             color="primary"
             aria-label={project.name}
-            sx={{ ml: "auto", fontWeight: 600, height: 50, alignSelf: "end" }}
+            sx={{ ml: "auto", fontWeight: 600, height: 40, alignSelf: "end" }}
             fullWidth
           >
             CHECK OUT
@@ -48,7 +48,7 @@ export default function ProjectCard({ project }) {
           size="md"
           color="success"
           aria-label="Explore Bahamas Islands"
-          sx={{ ml: "auto", fontWeight: 600, height: 50, alignSelf: "end" }}
+          sx={{ ml: "auto", fontWeight: 600, height: 40, alignSelf: "end" }}
           fullWidth
         >
           CODE
