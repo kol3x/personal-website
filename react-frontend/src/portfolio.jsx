@@ -3,11 +3,11 @@ import LeagueHelperImg from "./imgs/project-2.png";
 import BattleshipImg from "./imgs/project-3.png";
 import TurtleImg from "./imgs/project-4.png";
 import ProjectCard from "./components/projectCard";
-
 const projects = [
   {
     title: "Blog App",
     desc: "One of my most advanced projects. It consists of a React front-end to view blogposts and leave comments, REST API build on Express.js in the backend, MongoDB and additional React admin front-end for adding new blog-posts, build with express-session.",
+    stack: "React, Express, RestAPI, MongoDB",
     img: BlogAppImg,
     appURL: "https://spectacular-raindrop-01ff35.netlify.app",
     codeURL: "https://github.com/kol3x/blog-API",
@@ -15,6 +15,7 @@ const projects = [
   {
     title: "League Helper",
     desc: "My passion project, build with React and Redis, it uses Riot Games' API to fetch user's last League of Legends matches and show some fun statistics, that are not usually shown on popular LoL-stats websites. To not rely on the API too much, I used Redis to cache data on the first look-up.",
+    stack: "React, Express, RestAPI, Redis cache",
     img: LeagueHelperImg,
     appURL: "https://moonlit-kleicha-cc0648.netlify.app/",
     codeURL: "https://github.com/kol3x/League-Helper",
@@ -22,6 +23,7 @@ const projects = [
   {
     title: "Battleship Game",
     desc: "The classic Battleship game, implemented with vanilla JavaScript and written using test-driven development techniques with Jest.",
+    stack: "Plain JavaScript, tests with Jest",
     img: BattleshipImg,
     appURL: "https://kol3x.github.io/battleship/dist/",
     codeURL: "https://github.com/kol3x/battleship",
@@ -29,6 +31,7 @@ const projects = [
   {
     title: "Find the turtle!",
     desc: "My implementation of 'Where's Waldo?' game, but with TMNT characters. Express.js backend to store best time results and game state, React front-end.",
+    stack: "React, Express, MongoDB",
     img: TurtleImg,
     appURL: "https://visionary-beignet-52e97c.netlify.app/",
     codeURL: "https://github.com/kol3x/Find-the-Turtle",

@@ -8,8 +8,8 @@ import { Tooltip } from "@mui/material";
 import GithubIcon from "@mui/icons-material/GitHub";
 import LinkedinIcon from "@mui/icons-material/LinkedIn";
 import CVIcon from "@mui/icons-material/Description";
-import EmailIcon from "@mui/icons-material/Email";
 import LeetcodeIcon from "@mui/icons-material/Code";
+import EmailIconButton from "./emailButton";
 
 export default function MenuBar() {
   return (
@@ -19,11 +19,15 @@ export default function MenuBar() {
         position="static"
       >
         <Toolbar>
-          <Button color="inherit">Home</Button>
+          <Button color="inherit" href="/">
+            Home
+          </Button>
           <Button color="inherit">Blog</Button>
           <Button disabled sx={{ flexGrow: 1 }}></Button>
           <Tooltip title="My GitHub profile">
             <IconButton
+              href="https://github.com/kol3x"
+              target="_blank"
               size="large"
               edge="start"
               color="inherit"
@@ -35,6 +39,8 @@ export default function MenuBar() {
           </Tooltip>
           <Tooltip title="My LinkedIn profile">
             <IconButton
+              href="https://www.linkedin.com/in/nikolai-shcherbinin/"
+              target="_blank"
               size="large"
               edge="start"
               color="inherit"
@@ -46,6 +52,8 @@ export default function MenuBar() {
           </Tooltip>
           <Tooltip title="My CV">
             <IconButton
+              href="https://drive.google.com/file/d/1gaqd7i2KO8-nE08UuTJ8ZU_mSQZEC39E/"
+              target="_blank"
               size="large"
               edge="start"
               color="inherit"
@@ -55,19 +63,11 @@ export default function MenuBar() {
               <CVIcon />
             </IconButton>
           </Tooltip>
-          <Tooltip title="Email me at kolaegipet@gmail.com, click to copy">
-            <IconButton
-              size="large"
-              edge="start"
-              color="inherit"
-              aria-label="Email me at kolaegipet@gmail.com, click to copy"
-              sx={{ mr: 2 }}
-            >
-              <EmailIcon />
-            </IconButton>
-          </Tooltip>
+          <EmailIconButton></EmailIconButton>
           <Tooltip title="LeetCode profile">
             <IconButton
+              href="https://leetcode.com/kol3x/"
+              target="_blank"
               size="large"
               edge="start"
               color="inherit"

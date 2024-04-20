@@ -8,14 +8,14 @@ import { Tooltip } from "@mui/material";
 import GithubIcon from "@mui/icons-material/GitHub";
 import LinkedinIcon from "@mui/icons-material/LinkedIn";
 import CVIcon from "@mui/icons-material/Description";
-import EmailIcon from "@mui/icons-material/Email";
+import EmailIconButton from "./emailButton";
 import LeetcodeIcon from "@mui/icons-material/Code";
 
 export default function BottomMenuBar() {
   return (
     <Box sx={{ gridRow: 1, gridColumn: "1 / -1" }}>
       <AppBar
-        sx={{ backgroundColor: "#00bf63", color: "black"}}
+        sx={{ backgroundColor: "#00bf63", color: "black" }}
         position="static"
       >
         <Toolbar>
@@ -53,17 +53,7 @@ export default function BottomMenuBar() {
               <CVIcon />
             </IconButton>
           </Tooltip>
-          <Tooltip title="Email me at kolaegipet@gmail.com, click to copy">
-            <IconButton
-              size="large"
-              edge="start"
-              color="inherit"
-              aria-label="Email me at kolaegipet@gmail.com, click to copy"
-              sx={{ mr: 2 }}
-            >
-              <EmailIcon />
-            </IconButton>
-          </Tooltip>
+          <EmailIconButton></EmailIconButton>
           <Tooltip title="LeetCode profile">
             <IconButton
               size="large"

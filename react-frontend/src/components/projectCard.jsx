@@ -12,7 +12,7 @@ export default function ProjectCard({ project }) {
         <Typography fontSize="lg" fontWeight="lg">
           {project.title}
         </Typography>
-        <Typography level="body-sm">React, Express, MongoDB</Typography>
+        <Typography level="body-sm">{project.stack}</Typography>
       </div>
       <AspectRatio minHeight="120px" maxHeight="400px">
         <img src={project.img} loading="lazy" alt="" />
@@ -24,8 +24,10 @@ export default function ProjectCard({ project }) {
       </CardContent>
       <CardContent orientation="horizontal">
         <Button
+          href={project.appURL}
+          target="_blank"
           variant="solid"
-          size="lg  "
+          size="md"
           color="primary"
           aria-label={project.name}
           sx={{ ml: "auto", fontWeight: 600 }}
@@ -34,8 +36,10 @@ export default function ProjectCard({ project }) {
           CHECK OUT
         </Button>
         <Button
+          href={project.codeURL}
+          target="_blank"
           variant="solid"
-          size="lg"
+          size="md"
           color="success"
           aria-label="Explore Bahamas Islands"
           sx={{ ml: "auto", fontWeight: 600 }}
