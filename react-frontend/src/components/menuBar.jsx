@@ -22,7 +22,7 @@ export default function MenuBar() {
           <Button color="inherit" href="/">
             Home
           </Button>
-          <Button color="inherit">Blog</Button>
+          <Button color="inherit" href="https://nikolai-shcherbinins-blog.webflow.io/">Blog</Button>
           <Button disabled sx={{ flexGrow: 1 }}></Button>
           <Tooltip title="My GitHub profile">
             <IconButton
