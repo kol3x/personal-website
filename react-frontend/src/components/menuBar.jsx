@@ -33,7 +33,7 @@ export default function MenuBar() {
               edge="start"
               color="inherit"
               aria-label="My GitHub profile"
-              sx={{ mr: 2 }}
+              sx={{ mr: 2, ml: 2 }}
             >
               <GithubIcon />
             </IconButton>
@@ -73,7 +73,7 @@ export default function MenuBar() {
               edge="start"
               color="inherit"
               aria-label="LeetCode profile"
-              sx={{ mr: 2 }}
+
             >
               <LeetcodeIcon />
             </IconButton>
