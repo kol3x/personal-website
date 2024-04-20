@@ -54,16 +54,25 @@
 }
 
 @media (max-width: 700px) {
+  .heroScreen {
+    gap: 0px;
+  }
   .name {
-    font-size: 60px;
+    font-size: 40px;
+    margin: 0;
+    justify-self: start;
+    text-align: start;
+    margin-left: 20px;
   }
   .jobTitle {
-    font-size: 25px;
+    font-size: 15px;
   }
   .nikoAnimatedPhoto {
-    grid-column: 1;
-    height: 450px;
-    align-self: end;
-    justify-self: center;
+    justify-self: start;
+    margin-left: 20px;
+    height: 350px;
+  }
+  .barSpacer{
+    display: none!important;
   }
 }

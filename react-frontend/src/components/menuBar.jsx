@@ -19,16 +19,17 @@ export default function MenuBar() {
         position="static"
       >
         <Toolbar>
+          <Box>
           <Button color="inherit" href="/">
             Home
           </Button>
-          <Button color="inherit" href="https://nikolai-shcherbinins-blog.webflow.io/">Blog</Button>
-          <Button disabled sx={{ flexGrow: 1 }}></Button>
+          <Button color="inherit" href="https://nikolai-shcherbinins-blog.webflow.io/">Blog</Button></Box>
+          <Button className="barSpacer" disabled sx={{ flexGrow: 1 }}></Button>
           <Tooltip title="My GitHub profile">
             <IconButton
               href="https://github.com/kol3x"
               target="_blank"
-              size="large"
+              size="medium"
               edge="start"
               color="inherit"
               aria-label="My GitHub profile"

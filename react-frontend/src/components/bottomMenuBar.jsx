@@ -13,7 +13,7 @@ import LeetcodeIcon from "@mui/icons-material/Code";
 
 export default function BottomMenuBar() {
   return (
-    <Box sx={{ gridRow: 1, gridColumn: "1 / -1" }}>
+    <Box>
       <AppBar
         sx={{ backgroundColor: "#00bf63", color: "black" }}
         position="static"
