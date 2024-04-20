@@ -30,7 +30,7 @@ const projects = [
   },
   {
     title: "Personal Website",
-    desc: "Simple nice personal website, made with React, Framer Motion, MaterialUI. It went throw many variations, but came down to this.",
+    desc: "Well, you are here right now. Simple nice personal website, made with React, Framer Motion, MaterialUI. It went throw many variations, but came down to this.",
     stack: "React, Framer Motion, MaterialUI",
     img: PersonalWebsiteImg,
     appURL: "./",
