@@ -1,126 +1,69 @@
-header {
-  justify-self: center;
-  align-self: center;
+.heroScreen {
   display: grid;
+  height: 100vh;
+  color: #00bf63;
+  grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  height: max-content;
+  gap: 100px;
 }
 
-header > .main-pic {
-  margin: 30px;
-  margin-right: 0px;
-  justify-self: end;
-  position: relative;
-  text-align: center;
-  z-index: 1;
-}
-
-.main-pic > h3 {
-  position: absolute;
-  color: white;
-  font-size: 35px;
-  letter-spacing: 10px;
-  top: 5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.568);
-  padding: 10px;
-  width: 70%;
-  transition: 0.5s;
-}
-
-.main-pic > h3:hover {
-  background-color: white;
-  color: rgb(248, 151, 255);
-  text-shadow: 2px 2px black;
-}
-
-header > .about-me {
-  background-color: rgba(128, 128, 128, 0.11);
-  margin-top: 29px;
-  margin-right: 20px;
+.name {
+  grid-row: 1 / -1;
+  grid-column: 1;
+  font-family: "Londrina Shadow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 7px;
+  font-size: 120px;
   align-self: center;
+  justify-self: end;
+}
+
+.name > span {
+  opacity: 0.8;
+}
+
+.nikoAnimatedPhoto {
+  height: 700px;
+  grid-row: 1 / 3;
+  grid-column: 2;
+  place-self: center;
   justify-self: start;
-  font-size: 1.4em;
-  padding: 20px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-.about-me > h2 {
-  letter-spacing: -5px;
-  word-spacing: 10px;
-  text-align: center;
+.jobTitle {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  align-self: center;
 }
 
-header > .main-pic > img {
-  height: 90vh;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
-
-@media screen and (min-width: 951px) and (max-width: 1250px) {
-  header > .about-me {
-    align-self: start;
-  }
-
-  main > .projects-list {
+@media (max-width: 1260px) {
+  .heroScreen {
     grid-template-columns: 1fr;
   }
-
-  .about-me > div {
-    font-size: 18px;
+  .nikoAnimatedPhoto {
+    grid-column: 1;
+    height: 500px;
+    align-self: end;
+    justify-self: center;
   }
-  header > .main-pic > h3 {
-    font-size: 22px;
+  .name {
+    grid-row: 1;
+    justify-self: center;
   }
 }
 
-@media screen and (max-width: 950px) {
-  header {
-    grid-template-columns: 1fr;
+@media (max-width: 700px) {
+  .name {
+    font-size: 60px;
   }
-
-  header > .about-me {
-    margin: 0px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 13px -3px;
+  .jobTitle {
+    font-size: 25px;
   }
-
-  .about-me > h2 {
-    margin: 0px;
-  }
-
-  header > .main-pic {
-    place-self: center;
-    margin: 0px;
-  }
-  header > .main-pic > img {
-    height: auto;
-    max-width: 320px;
-  }
-
-  header > .main-pic > h3 {
-    font-size: 16px;
-  }
-
-  .about-me > div {
-    font-size: 16px;
-  }
-
-  main > .projects-list {
-    grid-template-columns: 1fr;
-  }
-
-  main > .projects-list > .project {
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-  }
-
-  .links {
-    flex-direction: column;
-  }
-
-  div > .icon {
-    width: 50px;
-    transition: 0.3s;
+  .nikoAnimatedPhoto {
+    grid-column: 1;
+    height: 450px;
+    align-self: end;
+    justify-self: center;
   }
 }
