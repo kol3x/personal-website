@@ -23,19 +23,23 @@ export default function ProjectCard({ project }) {
         </div>
       </CardContent>
       <CardContent orientation="horizontal">
-        <Button
-          component="a"
-          href={project.appURL}
-          target="_blank"
-          variant="solid"
-          size="md"
-          color="primary"
-          aria-label={project.name}
-          sx={{ ml: "auto", fontWeight: 600 }}
-          fullWidth
-        >
-          CHECK OUT
-        </Button>
+        {project.title !== "Personal Website" ? (
+          <Button
+            component="a"
+            href={project.appURL}
+            target="_blank"
+            variant="solid"
+            size="md"
+            color="primary"
+            aria-label={project.name}
+            sx={{ ml: "auto", fontWeight: 600 }}
+            fullWidth
+          >
+            CHECK OUT
+          </Button>
+        ) : (
+          ""
+        )}
         <Button
           component="a"
           href={project.codeURL}

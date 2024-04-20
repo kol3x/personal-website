@@ -1,7 +1,7 @@
 import BlogAppImg from "./imgs/project-1.png";
 import LeagueHelperImg from "./imgs/project-2.png";
 import BattleshipImg from "./imgs/project-3.png";
-import TurtleImg from "./imgs/project-4.png";
+import PersonalWebsiteImg from "./imgs/projectPersonalWebsite.png";
 import ProjectCard from "./components/projectCard";
 const projects = [
   {
@@ -29,12 +29,12 @@ const projects = [
     codeURL: "https://github.com/kol3x/battleship",
   },
   {
-    title: "Find the turtle!",
-    desc: "My implementation of 'Where's Waldo?' game, but with TMNT characters. Express.js backend to store best time results and game state, React front-end.",
-    stack: "React, Express, MongoDB",
-    img: TurtleImg,
-    appURL: "https://visionary-beignet-52e97c.netlify.app/",
-    codeURL: "https://github.com/kol3x/Find-the-Turtle",
+    title: "Personal Website",
+    desc: "Simple but pretty personal website, made with React, Framer Motion, MaterialUI. It went throw many variations, but came down to this.",
+    stack: "React, Framer Motion, MaterialUI",
+    img: PersonalWebsiteImg,
+    appURL: "./",
+    codeURL: "https://github.com/kol3x/personal-website",
   },
 ];
 
