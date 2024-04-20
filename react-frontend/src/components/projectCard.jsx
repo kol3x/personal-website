@@ -24,6 +24,7 @@ export default function ProjectCard({ project }) {
       </CardContent>
       <CardContent orientation="horizontal">
         <Button
+          component="a"
           href={project.appURL}
           target="_blank"
           variant="solid"
@@ -36,6 +37,7 @@ export default function ProjectCard({ project }) {
           CHECK OUT
         </Button>
         <Button
+          component="a"
           href={project.codeURL}
           target="_blank"
           variant="solid"
