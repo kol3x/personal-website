@@ -9,17 +9,17 @@ export default function ProjectCard({ project }) {
   return (
     <Card sx={{ maxWidth: "100%" }}>
       <div>
-        <Typography fontSize="lg" fontWeight="lg">
+        <Typography fontSize="30px" fontWeight="lg">
           {project.title}
         </Typography>
-        <Typography level="body-sm">{project.stack}</Typography>
+        <Typography level="body-sm" fontSize={"lg"}>{project.stack}</Typography>
       </div>
       <AspectRatio minHeight="120px" maxHeight="400px">
         <img src={project.img} loading="lazy" alt="" />
       </AspectRatio>
       <CardContent orientation="horizontal">
         <div>
-          <Typography fontSize="sm">{project.desc}</Typography>
+          <Typography fontSize="lg">{project.desc}</Typography>
         </div>
       </CardContent>
       <CardContent orientation="horizontal">
@@ -32,7 +32,7 @@ export default function ProjectCard({ project }) {
             size="md"
             color="primary"
             aria-label={project.name}
-            sx={{ ml: "auto", fontWeight: 600 }}
+            sx={{ ml: "auto", fontWeight: 600, height: 50, alignSelf: "end" }}
             fullWidth
           >
             CHECK OUT
@@ -48,7 +48,7 @@ export default function ProjectCard({ project }) {
           size="md"
           color="success"
           aria-label="Explore Bahamas Islands"
-          sx={{ ml: "auto", fontWeight: 600 }}
+          sx={{ ml: "auto", fontWeight: 600, height: 50, alignSelf: "end" }}
           fullWidth
         >
           CODE
