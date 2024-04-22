@@ -37,6 +37,7 @@ export default function MenuBar() {
               display: "grid",
               gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr",
               gridColumn: 3,
+              gap: 2,
             }}
           >
             <Tooltip title="My GitHub profile">
@@ -47,7 +48,6 @@ export default function MenuBar() {
                 edge="start"
                 color="inherit"
                 aria-label="My GitHub profile"
-                sx={{ mr: 2, ml: 2 }}
               >
                 <GithubIcon />
               </IconButton>
@@ -60,7 +60,6 @@ export default function MenuBar() {
                 edge="start"
                 color="inherit"
                 aria-label="My LinkedIn profile"
-                sx={{ mr: 2 }}
               >
                 <LinkedinIcon />
               </IconButton>
@@ -73,7 +72,6 @@ export default function MenuBar() {
                 edge="start"
                 color="inherit"
                 aria-label="My CV"
-                sx={{ mr: 2 }}
               >
                 <CVIcon />
               </IconButton>
