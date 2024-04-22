@@ -25,7 +25,7 @@ export default function MenuBar() {
             </Button>
             <Button
               color="inherit"
-              href="https://nikolai-shcherbinins-blog.webflow.io/"
+              href="https://spectacular-raindrop-01ff35.netlify.app"
             >
               Blog
             </Button>
