@@ -19,7 +19,7 @@ export default function MenuBar() {
             </Button>
             <Button
               color="inherit"
-              href="https://spectacular-raindrop-01ff35.netlify.app"
+              href="https://kol3x-blog.netlify.app/"
             >
               Blog
             </Button>
