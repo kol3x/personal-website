@@ -43,7 +43,7 @@ export default function Socials() {
       </Tooltip>
       <Tooltip title="My CV">
         <IconButton
-          href="https://drive.google.com/file/d/1EbC99OXUXUpJfCTUAdIeZ3AaVoOjFrvJ"
+          href="https://drive.google.com/file/d/1IHYn6uSwHljbZuNrNN22MD59jbBtkxZp"
           target="_blank"
           size="large"
           edge="start"
