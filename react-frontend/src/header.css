@@ -43,7 +43,7 @@
   }
   .nikoAnimatedPhoto {
     grid-column: 1;
-    height: 500px;
+    height: 400px;
     align-self: end;
     justify-self: center;
   }
