@@ -38,6 +38,10 @@
 }
 
 @media (max-width: 1260px) {
+  .name {
+    padding-top: 50px;
+    font-size: 60px;
+  }
   .heroScreen {
     grid-template-columns: 1fr;
   }
@@ -46,6 +50,7 @@
     height: 400px;
     align-self: end;
     justify-self: center;
+    margin-bottom: 50px;
   }
   .name {
     grid-row: 1;
@@ -60,19 +65,15 @@
   .name {
     font-size: 40px;
     margin: 0;
-    justify-self: start;
-    text-align: start;
-    margin-left: 20px;
   }
   .jobTitle {
     font-size: 15px;
   }
   .nikoAnimatedPhoto {
-    justify-self: start;
-    margin-left: 20px;
     height: 350px;
+    margin-bottom: 100px;
   }
-  .barSpacer{
-    display: none!important;
+  .barSpacer {
+    display: none !important;
   }
 }
