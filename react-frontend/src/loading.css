@@ -1,0 +1,70 @@
+/* Loading animation for hero screen */
+.hero-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(179deg, rgba(0,0,0,1) 9.2%, #00bf63 103.9%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-loading.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Loading pulsing dot */
+.loading-dot {
+  width: 12px;
+  height: 12px;
+  background-color: #00bf63;
+  border-radius: 50%;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% { 
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% { 
+    transform: scale(1.5);
+    opacity: 0.7;
+  }
+  100% { 
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Loading text */
+.loading-text {
+  color: #00bf63;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Hide hero screen until font is loaded */
+.heroScreen {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Show hero screen once font is loaded */
+.font-loaded .heroScreen {
+  opacity: 1;
+}
