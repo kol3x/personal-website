@@ -1,10 +1,11 @@
 import "./header.css";
 import "./portfolio.css";
+import "./loading.css";
 import Header from "./header";
 import Portfolio from "./portfolio";
 import { motion } from "framer-motion";
-import Helmet from "react-helmet";
 import BottomMenuBar from "./components/bottomMenuBar";
+import LoadingScreen from "./components/LoadingScreen";
 
 function App() {
   const fadeInVariants = {
@@ -13,23 +14,14 @@ function App() {
   };
 
   return (
-    <motion.div initial="hidden" animate="visible" variants={fadeInVariants}>
-      <Helmet>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap"
-          rel="stylesheet"
-        />
-      </Helmet>
-      <Header />
-      <Portfolio />
-      <BottomMenuBar></BottomMenuBar>
-    </motion.div>
+    <>
+      <LoadingScreen />
+      <motion.div initial="hidden" animate="visible" variants={fadeInVariants}>
+        <Header />
+        <Portfolio />
+        <BottomMenuBar></BottomMenuBar>
+      </motion.div>
+    </>
   );
 }
 
