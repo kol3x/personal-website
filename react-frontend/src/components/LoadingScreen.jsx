@@ -8,8 +8,6 @@ const LoadingScreen = () => {
     const startTime = Date.now();
     const minLoadingTime = 800;
     
-    const isFontCached = document.fonts.check('400 120px "Londrina Shadow"');
-    
     const waitForFont = async () => {
       try {
         const font = new FontFace('Londrina Shadow', 'url(https://fonts.gstatic.com/s/londrinashadow/v18/7Au1p_8ykD-cDz3zeONFX4U3BqEMEb6SfOcgEHOsqfQ.woff2)');
@@ -18,32 +16,22 @@ const LoadingScreen = () => {
         
         await document.fonts.ready;
         
-        if (isFontCached) {
+        const elapsedTime = Date.now() - startTime;
+        const remainingTime = Math.max(0, minLoadingTime - elapsedTime);
+        
+        setTimeout(() => {
           document.body.classList.add('font-loaded');
           setIsVisible(false);
-        } else {
-          const elapsedTime = Date.now() - startTime;
-          const remainingTime = Math.max(0, minLoadingTime - elapsedTime);
-          
-          setTimeout(() => {
-            document.body.classList.add('font-loaded');
-            setIsVisible(false);
-          }, remainingTime);
-        }
+        }, remainingTime);
         
       } catch (error) {
-        if (isFontCached) {
+        const elapsedTime = Date.now() - startTime;
+        const remainingTime = Math.max(0, minLoadingTime - elapsedTime);
+        
+        setTimeout(() => {
           document.body.classList.add('font-loaded');
           setIsVisible(false);
-        } else {
-          const elapsedTime = Date.now() - startTime;
-          const remainingTime = Math.max(0, minLoadingTime - elapsedTime);
-          
-          setTimeout(() => {
-            document.body.classList.add('font-loaded');
-            setIsVisible(false);
-          }, remainingTime);
-        }
+        }, remainingTime);
       }
     };
 
